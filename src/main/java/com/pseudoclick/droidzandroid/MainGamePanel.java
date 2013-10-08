@@ -7,6 +7,7 @@ import android.graphics.Canvas;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.graphics.BitmapFactory;
 
 public class MainGamePanel extends SurfaceView implements
         SurfaceHolder.Callback {
@@ -62,5 +63,6 @@ public class MainGamePanel extends SurfaceView implements
 
     @Override
     protected void onDraw(Canvas canvas) {
+        canvas.drawBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.wacko),10,10,null);
     }
 }
